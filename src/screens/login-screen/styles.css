@@ -1,0 +1,17 @@
+.main {
+  background-image: url("../../assets//images//3506330.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.column {
+  margin-top: 60px;
+  background-color: rgb(247, 237, 230);
+
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: content-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

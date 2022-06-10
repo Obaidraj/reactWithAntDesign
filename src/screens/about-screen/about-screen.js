@@ -46,7 +46,7 @@ const AboutScreen = () => {
           <Row>
             {users &&
               users.map((user) => (
-                <div className="site-card-border-less-wrapper">
+                <div className="site-card-border-less-wrapper" key={user}>
                   <Card
                     title={user.name}
                     bordered={true}

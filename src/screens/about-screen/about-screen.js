@@ -81,12 +81,16 @@ const AboutScreen = () => {
         onCancel={handleCancel}
         footer={null}
       >
-        <p> Name: {userData.name}</p>
-        <p>User Name: {userData.username}</p>
-        <p>Website Name: {userData.website}</p>
-        <p>phone : {userData.phone}</p>
-        <p>company : {userData.company.name}</p>
-        <p>company : {userData.address.city}</p>
+        {userData && (
+          <>
+            <p> Name: {userData.name && userData.name}</p>
+            <p>User Name: {userData.username && userData.username}</p>
+            <p>Website Name: {userData.website && userData.website}</p>
+            <p>phone : {userData.phone && userData.phone}</p>
+            <p>company : {userData.company && userData.company.name}</p>
+            <p>company : {userData.address && userData.address.city}</p>
+          </>
+        )}
       </Modal>
     </Layout>
   );
